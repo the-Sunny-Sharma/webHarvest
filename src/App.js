@@ -1,13 +1,19 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Slide from './components/Slide/Slide';
+import ProductCard from './components/ProductCard/ProductCard';
+import products from './productsData'; // Import the product data
 
 function App() {
   return (
     <>
+    <div id='content-container'>
       <Header/>
       <Slide />
-      <h1>How's the JOSH?</h1>
+      <div className="product-card-container">
+        <ProductCard products={products} />
+      </div> 
+      </div>
     </>
   );
 }

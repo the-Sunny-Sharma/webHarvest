@@ -5,14 +5,14 @@ import { ReactComponent as Cart } from '../../assets/shoppingCart.svg';
 import { ReactComponent as UserProfile } from '../../assets/userProfile.svg'; // Correct import path
 function Header() {
 
-  useEffect(() => {
-    // jQuery code to handle click event
-    $(".bars").click(() => {
-      $(".mobile__nav__fade__and__show__circle").toggleClass("open");
-      $(".mobile__nav__fade__and__show").toggleClass("open");
-      $(".bars").toggleClass("toggle");
-    } , [] );
-  }); 
+  // useEffect(() => {
+  //   // jQuery code to handle click event
+  //   $(".bars").click(() => {
+  //     $(".mobile__nav__fade__and__show__circle").toggleClass("open");
+  //     $(".mobile__nav__fade__and__show").toggleClass("open");
+  //     $(".bars").toggleClass("toggle");
+  //   } , [] );
+  // }); 
   
   return (
     <>
@@ -26,8 +26,9 @@ function Header() {
             <input type="button" value="search" />
           </div>
           <div className="cart__header__desktop">
-            <Cart height="32" width="32"/>
-            <span>50</span>
+            <a href="" className="cart__header__desktop anchor__remains__same" style={{ fontWeight: 'bold' }}>
+              <Cart width="32" height="32" /><span>50</span>
+            </a>
           </div>
         </nav>
       </header>

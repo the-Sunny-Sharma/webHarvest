@@ -1,0 +1,71 @@
+/* ProductCard.css */
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  /* Change text color for product card content */
+.product-card {
+  color: #333; /* Change to the desired text color, e.g., dark gray */
+}
+
+/* If you want to specifically target certain elements inside the product card */
+.product-card h2,
+.product-card p,
+.product-card span {
+  color: #333; /* Change to the desired text color */
+}
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+  .product-card button {
+    background-color: #f0c14b; /* Amazon's Add to Cart button color */
+    border: none;
+    color: #111; /* Text color */
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .product-card button:hover {
+    background-color: #ff9900; /* Hover color */
+  }
+  
+  /* Center the button text vertically */
+  .product-card button::before {
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  .product-card button span {
+    vertical-align: middle;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .product-card {
+      max-width: 100%;
+    }
+  }
+  
