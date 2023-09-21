@@ -9,12 +9,12 @@
     background-color: #fff;
     transition: transform 0.2s ease-in-out;
   }
-  /* Change text color for product card content */
+ 
 .product-card {
   color: #333; /* Change to the desired text color, e.g., dark gray */
 }
 
-/* If you want to specifically target certain elements inside the product card */
+
 .product-card h2,
 .product-card p,
 .product-card span {
